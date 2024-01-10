@@ -1,0 +1,181 @@
+body{
+    padding:0%;
+    margin:0%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/bg-2.png');
+}
+img{
+    max-width: 100%;
+    max-height: none;
+}
+header{
+    background-color: #ff4f00;
+    padding: 15px;
+}
+header nav{
+    display:none;
+}
+header .logo{
+    display: inline-block;
+}
+.divHeader{
+    display: flex;
+    justify-content: space-between;
+}
+header i.fas.fa-bars{
+    color:white;
+    align-self: center;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+main{
+    padding: 5%; 
+}
+main img{
+    width: 100%
+}
+.productos{
+    background-color: white;
+    padding: 8px;
+}
+.vermas{
+    display:none;
+}
+.tutoriales h2{
+    background-color: white;
+    padding: 8px;
+    border: solid 3px #dbdbdb;
+}
+.reparacion{
+    display: flex;
+    background-color: white;
+    padding: 8px;
+    border: solid 3px #dbdbdb;
+    margin-bottom: 15px;
+}
+.reparacion img{width: 35%;}
+.reparacion h5{
+    padding: 15px;
+    align-self: center;
+}
+.publicidad h2{
+    background-color: white;
+    padding: 8px;
+    border: solid 3px #dbdbdb;
+}
+.divPublicidad{
+    background-color: white;
+    padding: 8px;
+    overflow: hidden;
+}
+.publicidad img {
+    width: 100%;
+    max-height: none;
+}
+
+@media (min-width: 768px){
+    header i.fas.fa-bars{
+        display: none;
+    }
+    .divHeader{
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    header .logo{
+        width: 150px;
+    }
+    .navProductos{
+        display:inline-block;
+        padding-left: 10px;
+    }
+    .navProductos ul{
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+    .navProductos ul li{color: white;text-decoration: none;display: inline-block;}
+    .navProductos ul li a{
+        color: white;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    .login{
+        display: inline-block;
+        margin-left: auto;
+    }
+    .login ul{
+        list-style: none;
+        display: inline-block;
+    }
+    .login ul li{
+        color: white;text-decoration: none;display: inline-block;
+    }
+    .login ul li a{
+        color: white;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .artProductos{
+        width: 49%;
+    }
+    .artReparacion{
+        display: inline-block;
+        width: 49.7%;
+    }
+    .divPublicidad{
+        display: flex;
+        gap: 15px;
+    }
+}
+@media (min-width: 992px){
+    body{
+        margin: 5px 130px;
+    }
+    header{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    main{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .productos{
+        width: 65%;
+    }
+    .tutoriales{
+        width: 32%;
+        margin-left: auto;
+    }
+    .tutoriales h2{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .artReparacion{
+        width: 100%;
+    }
+    .reparacion{
+        margin: 0;
+    }
+    .publicidad{
+        width: 32%;
+        margin-left: auto;
+    }
+    .vermas{
+        display:inline-block;
+        margin: 0 0 10px 0;
+        background-color: #ff4f00;
+        padding: 5px 10px;
+        color: white;
+    }
+}
